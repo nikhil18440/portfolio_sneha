@@ -1,0 +1,110 @@
+.contact{
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--main-colour4);
+    padding: 3rem;
+
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 2rem;
+    font-size: 70px;
+    animation: headAnim 2s ease;
+}
+
+.mainContent{
+    display: flex;
+
+}
+
+.left{
+    flex: 1;
+    padding: 2rem;
+    /* padding: 2rem; */
+}
+
+.right{
+    flex: 1;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form > input{
+    background-color: var(--main-colour4);
+    border: 1px solid var(--main-colour3);
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    color: var(--main-colour2);
+}
+#message{
+    background-color: var(--main-colour4);
+    border: 1px solid var(--main-colour3);
+    /* border-bottom: 1px solid var(--main-colour2); */
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 80%;
+    height: 200px;
+    color: var(--main-colour2);
+}
+
+form > input:focus,textarea:focus{
+    outline: none;
+}
+form > input::placeholder,textarea::placeholder{
+    color: var(--main-colour3);
+}
+
+.sendBtn {
+    background-color: var(--main-colour4);
+    color: var(--main-colour2);
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    width: 80%;
+    /* padding: 1em 2em; */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--main-colour2);
+    box-shadow: 0 0 0 0 var(--main-colour2);
+    margin-top: 1rem;
+  }
+  
+  .sendBtn:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 var(--main-colour2);
+  };
+  
+.sendBtn:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 var(--main-colour2);
+  };
+
+  @keyframes headAnim {
+    from {
+        transform: rotateX(-90deg);
+        filter: opacity(0);
+        transform: translateX(-100px);
+    }
+    to{
+        filter: opacity(1);
+        transform: rotateX(0deg);
+        transform: translateX(0px);
+    }
+}

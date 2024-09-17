@@ -1,0 +1,142 @@
+.Works{
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-color: var(--var-colour);
+    padding: 2rem 5rem;
+    background-color: var(--main-colour4);
+    width: 100vw;
+}
+
+.allworksDiv{
+    /* columns: 300px; */
+    column-count: 3;
+    
+    /* height: 90vh; */
+}
+
+.singlework > img{
+    /* width: 20rem; */
+    /* height: 20rem;
+    object-fit: cover; */
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.singlework{
+    padding-top: 10px;
+    cursor: pointer;
+    z-index: 888;
+    position: relative;
+    /* animation-name: singlework; */
+    
+}
+
+
+
+
+#singleWork1{
+    animation: singlework 1s ease;
+}
+#singleWork2{
+    animation: singlework 1.5s ease;
+}
+#singleWork3{
+    animation: singlework 2s ease;
+}
+#singleWork4{
+    animation: singlework 2.5s ease;
+}
+#singleWork5{
+    animation: singlework 3s ease;
+}
+#singleWork6{
+    animation: singlework 3.5s ease;
+}
+@keyframes singlework {
+    from{
+        transform: translateY(50rem);
+    }
+    to{
+        transform: translateY(0rem);
+    }
+}
+
+h1{
+    color: var(--main-colour2);
+    animation: headAnim 2s ease;
+}
+
+@keyframes headAnim {
+    from {
+        transform: rotateX(-90deg);
+        filter: opacity(0);
+        transform: translateX(-100px);
+    }
+    to{
+        filter: opacity(1);
+        transform: rotateX(0deg);
+        transform: translateX(0px);
+    }
+}
+
+.allworksDiv:hover .singlework:not(:hover){
+    /* filter: grayscale(1); */
+    filter: grayscale(1) blur(5px);
+    transition: all 0.7s ease-in-out;
+}
+
+
+.singlework > h3{
+    color: var(--main-colour3);
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    left: 10px;
+}
+
+.viewAllDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+
+.allWorksBtn{
+    color: var(--main-colour2);
+    background-color: var(--main-colour4);
+    border: 1px solid var(--main-colour2);
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: headAnim 2s ease;
+}
+
+/* From Uiverse.io by sekaiking */ 
+.allWorksBtn {
+    background-color: var(--main-colour4);
+    color: var(--main-colour2);
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--main-colour2);
+    box-shadow: 0 0 0 0 var(--main-colour2);
+  }
+  
+  .allWorksBtn:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 var(--main-colour2);
+  };
+  
+.allWorksBtn:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 var(--main-colour2);
+  };
+
+
