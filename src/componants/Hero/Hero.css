@@ -1,0 +1,79 @@
+.section_hero{
+    width:100%;
+    height:100vh;
+    background-color: var(--main-colour4);
+    
+  }
+  .gradient{
+    position:absolute;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    
+  }
+  .gradient_dropShadow{
+    width: 100px;
+    height: 300px;
+    rotate: 30deg;
+    filter: drop-shadow(5px 5px 100px #3cec7f);
+    filter:blur(200px);
+    background-color:#3cec7f ;
+  }
+ 
+  .intro{
+   
+   margin-top: 150px;
+   margin-left: 100px; 
+   position: absolute;
+  }
+  
+  p{
+    margin-left: 20px;
+    color: var(--main-colour2);
+    font-size: clamp(1em, 2vw, 1.5em);
+    word-spacing: 5px;
+    position: relative;
+    font-family: sans-serif;
+    
+  }
+  .mainHeading {
+    font-size: clamp(2.5em, 10vw, 16em);
+    color: transparent;      
+    font-weight: bolder; 
+    -webkit-text-stroke:1px var(--main-colour1); 
+
+  }
+ 
+  .subHeading {
+    color: var(--main-colour2);
+    font-size: 1.5em;
+    word-spacing: 5px;
+  
+  }
+  .img_sneha{
+    float: right;
+  }
+  img{
+    display: flex;
+    filter: grayscale(100%);
+    width: 100%;
+    margin-right:clamp(0px,100vw,220px);
+  }
+  
+  .author_img:hover{
+    filter: grayscale(50%);
+  }
+  .icons{
+    display: flex;
+    color:var(--main-colour2);
+    font-size: 30px;
+    gap:10px;
+  
+  }
+  .icons>:hover{
+    color:#5ba964;
+    filter: drop-shadow(2px 5px 41px #14947f);
+    border-bottom: none;
+  }
+ 
