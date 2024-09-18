@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
-import {FaEllipsisH} from 'react-icons/fa';
+import {FaBars} from 'react-icons/fa';
+import { IoMdClose } from "react-icons/io";
 import gsap from 'gsap';
 import {useGSAP} from '@gsap/react'
 import { useState } from 'react';
@@ -31,7 +32,7 @@ function Navbar() {
               </ul>
           </div>
          
-            <button className='nav_btn' onClick={()=>(setMenuOpen(!menuOpen))} ><FaEllipsisH/></button>
+            <button className='nav_btn' onClick={()=>(setMenuOpen(!menuOpen))} >{menuOpen?<IoMdClose/>:<FaBars/>}</button>
            
         </nav> 
     

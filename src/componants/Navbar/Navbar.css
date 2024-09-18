@@ -1,17 +1,29 @@
 nav{
+    margin: 0;
+    padding: 0;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color:var(--main-colour1);
-    font-size :1.5em;
+    /* border-bottom: 1px solid var(--main-colour2); */
     
+  }
+  ul{
+    position: relative;
+    right: 50%;
+    font-size: 1.5em;
+  }
+  .nav_Logo{
+    position: relative;
+    left: 10%;
+    font-size: 2.5em;
   }
   
   .nav_Logo,.nav_btn_right{
     cursor: pointer;
     margin-left: 5px;
     margin-right: 5px;
-    font-size: 1.2em;
     font-family: monospace;
     font-style: italic;
   }
@@ -22,14 +34,13 @@ nav{
     border: none;
     text-align: right;
     cursor: pointer;
-    display: block;
-    right: 0;
+    display: none;
     
   }
-  @media only screen and (max-width:480px){
+  @media (max-width:1024px){
     nav .nav_btn{
       display: flex;
-     
+      visibility: visible;
     }
 
     ul{
@@ -37,22 +48,38 @@ nav{
       flex-direction: column;
       align-items: start;
       gap:20px;
+      background: #000;
+      width: 100%;
+      transform: translateY(10%);
+      transition: 1s linear ease-in;
+      
     }
-    nav ul{
+     nav ul{
+      width: 100%;
       display: none;
       flex-direction: column;
-      width: 100%;
+      /* justify-content: start;
+      align-items: center; */
       margin-bottom: 0.25rem;
-      
+      position: absolute;
+      right:0;
+      transition: 1s linear;
+      /* /* height: 100vh; */
+      /* background-color: rgba(255,255,255,0.5); */
     }
    
     nav ul li{
       width: 100%;
       text-align: center; 
+     
+      
     }
     nav ul li a{
       margin: 0.2rem 0.5rem;
+      /* color:var(--main-colour4); */
+      font-size: 1em;
     }
+
   }
   
   .nav_items{
