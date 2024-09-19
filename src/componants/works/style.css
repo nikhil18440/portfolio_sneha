@@ -4,7 +4,7 @@
     background-color: var(--var-colour);
     padding: 2rem 5rem;
     background-color: var(--main-colour4);
-    width: 100vw;
+    width:fit-content;
 }
 
 .allworksDiv{
@@ -18,7 +18,7 @@
     /* width: 20rem; */
     /* height: 20rem;
     object-fit: cover; */
-    width: 100%;
+    width:100%;
     object-fit: cover;
     height: 100%;
 }
