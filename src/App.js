@@ -5,6 +5,7 @@ import Hero from './componants/Hero/Hero';
 import Works from './componants/works/Works';
 import Contact from './componants/contact/Contact';
 import Software from './componants/Software/Software';
+import Footer from './componants/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Works/>
       <Software/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }

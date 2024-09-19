@@ -2,7 +2,7 @@ import React from 'react'
 import './Hero.css';
 import gsap from 'gsap';
 import {useGSAP} from '@gsap/react'
-import {FaWhatsapp,FaInstagram,FaTwitter,FaFacebook} from 'react-icons/fa'
+// import {FaWhatsapp,FaInstagram,FaTwitter,FaFacebook} from 'react-icons/fa'
 
 export default function Hero() {
 
@@ -37,12 +37,12 @@ export default function Hero() {
                   I am a Professional <br></br><span className='mainHeading'>ARCHITECT</span>
                 </p>  
             </div>
-            <div className='icons'>
+            {/* <div className='icons'>
               <a href=""><FaWhatsapp/></a>
               <a href=""><FaInstagram/></a>  
               <a href=""><FaTwitter/></a>
               <a href=''><FaFacebook/></a>
-            </div>
+            </div> */}
         </div>
       </section>
   )
