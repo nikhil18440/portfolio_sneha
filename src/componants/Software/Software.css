@@ -48,29 +48,28 @@
     align-items: center;
     justify-content: space-evenly; 
      flex: 1; */
-   
      /* margin: 0;
-  padding: 5rem;
-  width: 70vw;
-  max-width: 90vw;
-  height: 50vh;
-  align-content: center;
-  background: var(--main-colour4);
-  background-image: linear-gradient(var(--main-colour3) .01em, transparent .1em), linear-gradient(90deg, var(--main-colour3)  .01em, transparent .1em);
-  background-size: 9em 8.2em;
+    padding: 5rem;
+    width: 70vw;
+    max-width: 90vw;
+    height: 50vh;
+    align-content: center;
+    background: var(--main-colour4);
+    background-image: linear-gradient(var(--main-colour3) .01em, transparent .1em), linear-gradient(90deg, var(--main-colour3)  .01em, transparent .1em);
+    background-size: 9em 8.2em;
 
    */
-   position: relative;
-   overflow: hidden;
-   padding: 5rem;
-   width: 70vw;
-   max-width: 90vw;
-   height: fit-content;
-   background-image:
-       linear-gradient(to right, var(--line) 0.1px, transparent 1px),
-       linear-gradient(to bottom, var(--line) 0.1px, transparent 1px);
-   background-size: 5rem 5rem;
-   background-position: center center;
+    position: relative;
+    overflow: hidden;
+    padding: 5rem;
+    width: 70vw;
+    max-width: 90vw;
+    height: fit-content;
+    background-image:
+        linear-gradient(to right, var(--line) 0.1px, transparent 1px),
+        linear-gradient(to bottom, var(--line) 0.1px, transparent 1px);
+    background-size: 5rem 5rem;
+    background-position: center center;
   
   }
   
