@@ -1,0 +1,81 @@
+.Skills{
+    background-color: var(--main-colour1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Skills>h1{
+    background-color: var(--main-colour2);
+}
+
+.allSkills{
+    background-color: var(--main-colour3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+.skillrow1,.skillrow2,.skillrow3{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem 0px;
+}
+
+.skill{
+    cursor: pointer;
+    /* border: 1px solid var(--main-colour2);
+    border-radius: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: var(--main-colour3); */
+}
+
+.skill > img{
+    width: 100px;
+    filter: grayscale(1);
+    /* padding: 1rem; */
+    animation-name: autoScrollAnim;
+    animation-timeline: view();
+}
+
+
+
+.skill > p{
+    color: var(--main-colour2);
+    background-color: var(--main-colour3);
+}
+
+.skill>img:hover{
+    filter: grayscale(0);
+    transform: scale(1.5);
+    transition: transform 1s ease-in-out;
+}
+
+.skill>img:out-of-range{
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+}
+
+.skill>img:not(:hover){
+    /* transform: scale(0.5); */
+}
+
+@keyframes autoScrollAnim {
+    from {
+        transform: rotate(0deg);
+        /* filter: opacity(0);
+        transform: translateX(-100px); */
+    }
+    to{
+        transform: rotate(90deg);
+        /* filter: opacity(1);
+        transform: translateX(0px); */
+    }
+}

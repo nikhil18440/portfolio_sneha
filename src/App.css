@@ -1,0 +1,24 @@
+.App{
+    width: calc(100vw - 2*8px);
+    /* max-width: 100vw;
+    overflow-x: hidden; */
+    background-color: var(--main-colour1);
+    
+    /* sc */
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* padding: 2rem; */
+    /* padding: 5rem; */
+}
+
+.gapDiv{
+    height: 100vh;
+}
+.gapDiv2{
+    height: 50vh;
+}
+
+.splitDiv{
+    display: flex;
+}

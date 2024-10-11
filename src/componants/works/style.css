@@ -1,24 +1,45 @@
 .Works{
+    /* overflow: hidden; */
+    width: calc(100vw - 2*8px);
     /* width: 100vw; */
     /* height: 100vh; */
-    background-color: var(--var-colour);
-    padding: 2rem 5rem;
-    background-color: var(--main-colour4);
-    width: 100vw;
+    /* background-color: var(--var-colour); */
+    /* padding: 2rem 5rem; */
+    background-color: var(--main-colour1);
+    position: relative;
+    z-index: 999;
+    /* width: 100vw; */
+    /* background-color: aqua; */
+    margin: 0px;padding: 0px;
+    /* padding: 5rem; */
+}
+
+
+.mainHeadText{
+    color: var(--main-colour3);
+    padding-top: 4rem;
+    /* color: var(--main-colour2); */
+    font-family: 'titania';
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 
 .allworksDiv{
     /* columns: 300px; */
+    /* width: 10rem; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    padding: 1rem 5rem;
     column-count: 3;
     
     /* height: 90vh; */
 }
 
 .singlework > img{
-    /* width: 20rem; */
+    width: 100%;
     /* height: 20rem;
     object-fit: cover; */
-    width: 100%;
+    /* width: 350px; */
     object-fit: cover;
     height: 100%;
 }
@@ -36,53 +57,84 @@
 
 
 #singleWork1{
-    animation: singlework 1s ease;
+    /* animation: singlework 1s ease; */
+
+    animation: singlework both;
+    animation-timeline: view(80% 20%);
 }
 #singleWork2{
-    animation: singlework 1.5s ease;
+    /* animation: singlework 1.5s ease; */
+    animation: singlework both;
+    animation-timeline: view(80% 20%);
 }
 #singleWork3{
-    animation: singlework 2s ease;
+    /* animation: singlework 2s ease; */
+    animation: singlework both;
+    animation-timeline: view(80% 20%);
 }
 #singleWork4{
-    animation: singlework 2.5s ease;
+    /* animation: singlework 2.5s ease; */
+    animation: singlework both;
+    animation-timeline: view(80% 20%);
 }
 #singleWork5{
-    animation: singlework 3s ease;
+    /* animation: singlework 3s ease; */
+    animation: singlework both;
+    animation-timeline: view(80% 20%);
 }
 #singleWork6{
-    animation: singlework 3.5s ease;
+    /* animation: singlework 3.5s ease; */
+    animation: singlework both;
+    animation-timeline: view(80% 20%);
 }
 @keyframes singlework {
+    from{
+        transform: translateY(50rem);
+        filter: opacity(0);
+    }
+    to{
+        transform: translateY(0rem);
+        filter: opacity(1);
+    }
+}
+/* @keyframes singlework {
     from{
         transform: translateY(50rem);
     }
     to{
         transform: translateY(0rem);
     }
-}
+} */
 
 h1{
-    color: var(--main-colour2);
-    animation: headAnim 2s ease;
+    color: var(--main-colour4);
+    animation-name: headAnim;
+    animation-timeline: view(80% 40%);
+    /* padding: 0px 5rem; */
+    margin: 0px;
+}
+
+header{
+    margin: 0px;
+    padding: 0px 5rem ;
 }
 
 @keyframes headAnim {
     from {
-        transform: rotateX(-90deg);
+        /* transform: rotateX(-90deg); */
         filter: opacity(0);
         transform: translateX(-100px);
     }
     to{
         filter: opacity(1);
-        transform: rotateX(0deg);
+        /* transform: rotateX(0deg); */
         transform: translateX(0px);
     }
 }
 
 .allworksDiv:hover .singlework:not(:hover){
     /* filter: grayscale(1); */
-    filter: grayscale(1) blur(5px);
+    /* filter: grayscale(1) blur(5px); */
     transition: all 0.7s ease-in-out;
 }
 
@@ -112,7 +164,7 @@ h1{
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    animation: headAnim 2s ease;
+    
 }
 
 /* From Uiverse.io by sekaiking */ 
@@ -140,3 +192,108 @@ h1{
   };
 
 
+  @keyframes autoScrollAnim {
+    from {
+        transform: rotate(0deg);
+        /* filter: opacity(0);
+        transform: translateX(-100px); */
+    }
+    to{
+        transform: rotate(90deg);
+        /* filter: opacity(1);
+        transform: translateX(0px); */
+    }
+}
+
+
+.itemDiv{
+    /* width: 100rem; */
+    width: 50vw;
+
+    height: 60vh;
+    /* object-fit: cover; */
+    margin: 0px 10rem;
+    /* background-color: aqua; */
+    cursor: pointer;
+}
+
+.stickyParent{
+    height: 400vh;
+}
+
+.sticky{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.scrollSection{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 400vw;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 5vw; */
+}
+
+#img1{
+    padding-left: 100vw;
+}
+
+#imgLast{
+    padding-right: 100vw;
+}
+
+.itemDiv{
+    position: relative;
+}
+
+.itemImg{
+    /* position: relative;
+    z-index: 777;
+    width: 100%; */
+    width: 50vw;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.itemImgHead{
+    position: absolute;
+    top: 0;
+    padding-left: 30px;
+    /* left: 0; */
+    z-index: 999;
+    color: var(--main-colour1);
+}
+
+.itemImgText{
+    position: absolute;
+    top: 30px;
+    padding-left: 30px;
+    /* right: 30px; */
+    /* left: 0; */
+    z-index: 999;
+    color: var(--main-colour3);
+}
+
+@media only screen and (max-width: 800px) {
+    .allworksDiv{
+        column-count: 2;
+    }
+
+    .itemImg{
+        width: 80vw;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .allworksDiv{
+        column-count: 1;
+    }
+    .itemImg{
+        width: 50vw;
+    }
+}

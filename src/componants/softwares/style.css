@@ -1,0 +1,60 @@
+.Softwares{
+    width: calc(100vw - 2*8px);
+    /* height: 100vh; */
+    position: relative;
+    background-color: var(--main-colour4);
+    z-index: 999;
+    padding: 20rem 0px;
+    margin: 0px;
+}
+
+
+@font-face {
+    font-family: 'titania';
+    src: url('../../fonts/titania/Titania-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'arcane';
+    src: url('../../fonts/arcane_nine/Arcane\ Nine.otf');
+}
+
+
+.softHead{
+    color: var(--main-colour2);
+    font-family: 'titania';
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* animation: leftAnim both;
+    animation-timeline: view(); */
+}
+
+
+.softList{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    font-family: 'arcane';
+    color: var(--main-colour3);
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    line-height: 2.5rem;
+    list-style: none;
+}
+
+.softListItem{
+    padding: 0px 1.5rem;
+}
+
+.listDiv{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

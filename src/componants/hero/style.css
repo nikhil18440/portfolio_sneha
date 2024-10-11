@@ -1,0 +1,53 @@
+.Hero{
+    background-color: var(--main-colour4);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    position: fixed;
+    /* cursor: zoom-in; */
+}
+
+@font-face {
+    font-family: 'titania';
+    src: url('../../fonts/titania/Titania-Regular.ttf');
+}
+@font-face {
+    font-family: 'arcane';
+    src: url('../../fonts/arcane_nine/Arcane\ Nine.otf');
+}
+
+.mainTexts{
+    font-size: 2rem;
+    /* font-family: 'arcane'; */
+    font-family: 'titania';
+    color: var(--main-colour3);
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    text-transform: uppercase;
+    /* bottom: 6rem; */
+}
+.line3{
+    font-size: 16vw;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 6rem;
+    z-index: 888;
+    font-family: 'titania';
+    transform: scale(1, 1.7);
+    color: var(--main-colour1);
+    /* color: white;
+    mix-blend-mode: exclusion; */
+}
+
+.mainImg{
+    width: 40rem;
+    height: 25rem;
+    object-fit: cover;
+    position: absolute;
+    bottom: 10rem;
+    right: 10rem;
+}
+

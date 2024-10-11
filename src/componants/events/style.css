@@ -1,0 +1,51 @@
+.Events{
+    width: calc(100vw - 2*8px);
+    position: relative;
+    background-color: var(--main-colour4);
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20rem;
+}
+
+@font-face {
+    font-family: 'titania';
+    src: url('../../fonts/titania/Titania-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'arcane';
+    src: url('../../fonts/arcane_nine/Arcane\ Nine.otf');
+}
+
+
+.eventHead{
+    font-size: 2.5rem;
+    font-family: 'titania';
+    color: var(--main-colour2);
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventList{
+    margin: 0px;
+    list-style: none;
+    color: var(--main-colour3);
+    padding: 0px;
+    padding-bottom: 7rem;
+    font-size: 1.2rem;
+    font-family: 'arcane';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.eventItem{
+    line-height: 40px;
+}

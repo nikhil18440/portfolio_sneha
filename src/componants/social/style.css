@@ -1,0 +1,63 @@
+.Social{
+    position: relative;
+    width: calc(100vw - 2*8px);
+    background-color: var(--main-colour4);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SocialHead{
+    font-size: 2.5rem;
+    font-family: 'titania';
+    color: var(--main-colour2);
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+}
+
+
+
+.SocialIcon {
+    background-color: var(--main-colour4);
+    color: var(--main-colour2);
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    /* padding: 1em 2em; */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--main-colour2);
+    box-shadow: 0 0 0 0 var(--main-colour2);
+    margin: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .SocialIcon:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 var(--main-colour2);
+  };
+  
+  .SocialIcon:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 var(--main-colour2);
+  };

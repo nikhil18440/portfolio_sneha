@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'titania';
+    src: url('../../fonts/titania/Titania-Regular.ttf');
+}
+@font-face {
+    font-family: 'arcane';
+    src: url('../../fonts/arcane_nine/Arcane\ Nine.otf');
+}
+
+
+.Navbar{
+    font-size: 1.5rem;
+    font-family: 'arcane';
+    /* font-family: 'titania'; */
+    color: var(--main-colour3);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavbarList{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

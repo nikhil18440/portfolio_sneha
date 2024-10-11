@@ -1,44 +1,63 @@
 .contact{
-    padding: 0px;
+    /* padding: 0px; */
     margin: 0px;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: var(--main-colour4);
-    padding: 3rem;
-
+    /* padding: 3rem; */
+    padding: 8rem 0rem;
+    position: relative;
+    z-index: 999;
+    
+    /* margin-top: 100vh; */
 }
 
-h1{
+@font-face {
+    font-family: 'titania';
+    src: url('../../fonts/titania/Titania-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'arcane';
+    src: url('../../fonts/arcane_nine/Arcane\ Nine.otf');
+}
+
+.contactHead{
     padding: 0px;
     margin: 0px;
     margin-bottom: 2rem;
-    font-size: 70px;
-    animation: headAnim 2s ease;
+    font-size: 2.5rem;
+    color: var(--main-colour2);
+    font-family: 'titania';
+    font-weight: 400;
+    /* animation-name: headAnim;
+    animation-timeline: view(); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mainContent{
     display: flex;
+    padding: 1rem 0px;
+    /* padding: 2rem 0rem; */
+    align-items: center;
+    justify-content: center;
 
+    /* flex-direction: row-reverse; */
 }
 
-.left{
-    flex: 1;
-    padding: 2rem;
-    /* padding: 2rem; */
-}
 
-.right{
-    flex: 1;
-}
 
-form{
+.mainForm{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    width: 70%;
 }
 
-form > input{
+.formInput{
     background-color: var(--main-colour4);
     border: 1px solid var(--main-colour3);
     border-radius: 10px;
@@ -63,10 +82,10 @@ form > input{
     color: var(--main-colour2);
 }
 
-form > input:focus,textarea:focus{
+.formInput:focus, .formText:focus{
     outline: none;
 }
-form > input::placeholder,textarea::placeholder{
+.formInput::placeholder, .formText::placeholder{
     color: var(--main-colour3);
 }
 
@@ -98,13 +117,37 @@ form > input::placeholder,textarea::placeholder{
 
   @keyframes headAnim {
     from {
-        transform: rotateX(-90deg);
+        /* transform: rotateX(-90deg); */
         filter: opacity(0);
         transform: translateX(-100px);
     }
     to{
         filter: opacity(1);
-        transform: rotateX(0deg);
+        /* transform: rotateX(0deg); */
+        transform: translateX(0px);
+    }
+}
+  @keyframes rightAnim {
+    from {
+        /* transform: rotateX(-90deg); */
+        filter: opacity(0);
+        transform: translateX(100px);
+    }
+    to{
+        filter: opacity(1);
+        /* transform: rotateX(0deg); */
+        transform: translateX(0px);
+    }
+}
+  @keyframes leftAnim {
+    from {
+        /* transform: rotateX(-90deg); */
+        filter: opacity(0);
+        transform: translateY(100px);
+    }
+    to{
+        filter: opacity(1);
+        /* transform: rotateX(0deg); */
         transform: translateX(0px);
     }
 }
